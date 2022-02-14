@@ -20,7 +20,7 @@ class XivApiServiceProvider extends ServiceProvider
             ->needs(Client::class)
             ->give(function () {
                 return new Client([
-                    'base_uri' => config('tm.api_url'),
+                    'base_uri' => config('xivApi.url'),
                     RequestOptions::HEADERS => [
                     ],
                 ]);

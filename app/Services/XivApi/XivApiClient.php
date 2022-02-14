@@ -12,4 +12,9 @@ class XivApiClient
     {
         $this->adapter = $xivApiAdapter;
     }
+
+    public function getCharacter(string $lodestoneId)
+    {
+        return $this->adapter->getCharacter($lodestoneId);
+    }
 }

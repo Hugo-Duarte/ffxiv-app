@@ -15,12 +15,12 @@ class XivApiAdapter
 
     public function searchCharacter($data)
     {
-        return $this->connector->fetchData('GET',  '/character/search', null);
+        return $this->connector->fetchData('GET', '/character/search', null);
     }
 
-    public function getCharacter(string $lodestoneId, $data)
+    public function getCharacter(string $lodestoneId, $data = null)
     {
-        return $this->connector->fetchData('GET',  '/character/' . $lodestoneId, null);
+        return $this->connector->fetchData('GET', '/character/' . $lodestoneId, null);
     }
 
 }
