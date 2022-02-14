@@ -51,6 +51,9 @@
         ],
         "style": [
             "./vendor/bin/php-cs-fixer fix --allow-risky=yes"
+        ],
+        "larastan": [
+            "./vendor/bin/phpstan analyse"
         ]
     },
     "extra": {
